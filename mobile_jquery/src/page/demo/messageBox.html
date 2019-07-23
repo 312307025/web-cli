@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>弹出框</title>
+    <meta name="keywords" content="弹出框">
+    <meta name="description" content="弹出框">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- [if lt IE 9]>
+            <script src="../../lib/html5shiv.js"></script>
+            <script src="../../lib/respond.min.js"></script>
+        <![endif]-->
+    <script src="../../lib/jquery-1.8.0.min.js"></script>
+    <script src="../../lib/flexible.js"></script>
+    <script src="../../lib/layer/layer.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/utils.js"></script>
+    <style>
+        .form {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <section class="form form-inline">
+                <div class="form-item">
+                    <div class="form-item__content">
+                        <a class="btn-primary pure" href="javascript:alert('处理数据', function(){console.log('alert');})">alert</a>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-item__content">
+                        <a class="btn-primary pure" href="javascript:confirm('处理问题请求', function(){console.log('confirm');})">confirm</a>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-item__content">
+                        <a class="btn-primary pure" href="javascript:toast('处理成功', {icon: 0,end: function(){console.log('toast');}})">toast</a>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-item__content">
+                        <a class="btn-primary pure" href="javascript:loading('加载中')">loading</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

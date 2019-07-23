@@ -1,0 +1,71 @@
+/* .page-cell{
+    
+} */
+.cell{
+    background: #fff;
+    min-height: 48px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.cell.border-primary {
+    border-width: 0 0 1px 0;
+}
+
+.cell.border-primary:last-child {
+    border-width: 0;
+}
+.cell-wrapper{
+    display: flex;
+    line-height: 1;
+    min-height: inherit;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.cell_content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 0;
+}
+.cell_content [class*=icon-] {
+    flex: 0 0 auto;
+}
+.cell_content [class*=icon-] + .cell_text{
+    margin-left: 5px;
+}
+.cell_label{
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+    flex: 0 0 auto;
+    width: 100%;
+}
+.cell_aside{
+    flex: 0 0 auto;
+}
+.is-link{
+    position: relative;
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+}
+.is-link::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #666;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.is-link.white::after{
+    border-color: #fff;
+}

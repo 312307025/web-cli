@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>按钮</title>
+    <meta name="keywords" content="按钮">
+    <meta name="description" content="按钮">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- [if lt IE 9]>
+            <script src="../../lib/html5shiv.js"></script>
+            <script src="../../lib/respond.min.js"></script>
+        <![endif]-->
+    <script src="../../lib/jquery-1.8.0.min.js"></script>
+    <script src="../../lib/flexible.js"></script>
+    <script src="../../lib/layer/layer.js"></script>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/utils.js"></script>
+    <style>
+        section{
+            margin: 20px;
+        }
+        section a{
+            display: inline-block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <section>
+                <a class="btn-default">btn-default</a>
+                <a class="btn-default disabled" onclick="javascript:alert(1)">btn-default disabled</a>
+                <!-- off是去掉了css的按钮穿透，可以触发绑定在该节点上的事件与方法 -->
+                <a class="btn-default disabled off" onclick="javascript:alert(1)">btn-default disabled</a>
+                <a class="btn-default pure">btn-default pure</a>
+                <a class="btn-default pure disabled">btn-default pure disabled</a>
+            </section>
+            <section>
+                <a class="btn-primary">btn-primary</a>
+                <a class="btn-primary disabled">btn-primary disabled</a>
+                <a class="btn-primary pure">btn-primary pure</a>
+                <a class="btn-primary pure disabled">btn-primary pure disabled</a>
+            </section>
+            <section>
+                <a class="btn-success">btn-primary</a>
+                <a class="btn-success disabled">btn-primary disabled</a>
+                <a class="btn-success pure">btn-primary pure</a>
+                <a class="btn-success pure disabled">btn-primary pure disabled</a>
+            </section>
+            <section>
+                <a class="btn-info">btn-primary</a>
+                <a class="btn-info disabled">btn-primary disabled</a>
+                <a class="btn-info pure">btn-primary pure</a>
+                <a class="btn-info pure disabled">btn-primary pure disabled</a>
+            </section>
+            <section>
+                <a class="btn-warning">btn-primary</a>
+                <a class="btn-warning disabled">btn-primary disabled</a>
+                <a class="btn-warning pure">btn-primary pure</a>
+                <a class="btn-warning pure disabled">btn-primary pure disabled</a>
+            </section>
+            <section>
+                <a class="btn-danger">btn-primary</a>
+                <a class="btn-danger disabled">btn-primary disabled</a>
+                <a class="btn-danger pure">btn-primary pure</a>
+                <a class="btn-danger pure disabled">btn-primary pure disabled</a>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+/* 按钮 */
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #606266;
+    border-color: #dcdfe6;
+    background: #fff;
+}
+
+.btn-default.disabled {
+    color: #c0c4cc;
+    border-color: #ebeef5;
+}
+
+.btn-default.pure {
+    background: #dcdfe6;
+}
+
+.btn-default.pure.disabled {
+    background: #ebeef5;
+}
+
+.btn-primary {
+    color: #2a2a2a;
+    border-color: #000;
+}
+
+.btn-primary.disabled {
+    color: #a2a2a2;
+    border-color: #a2a2a2;
+}
+
+.btn-primary.pure {
+    color: #fff;
+    border-color: #1c1c1c;
+    background: #1c1c1c;
+}
+
+.btn-primary.pure.disabled {
+    color: #fff;
+    border-color: #a2a2a2;
+    background: #a2a2a2;
+}
+
+.btn-success {
+    color: #67c23a;
+    border-color: #67c23a;
+}
+
+.btn-success.disabled {
+    border-color: #b3e19d;
+    color: #b3e19d;
+}
+
+.btn-success.pure {
+    color: #fff;
+    background: #67c23a;
+    border-color: #67c23a;
+}
+
+.btn-success.pure.disabled {
+    background: #b3e19d;
+    border-color: #b3e19d;
+}
+
+.btn-info {
+    border-color: #909399;
+    color: #909399;
+}
+
+.btn-info.disabled {
+    border-color: #c8c9cc;
+    color: #c8c9cc;
+}
+
+.btn-info.pure {
+    background: #909399;
+    border-color: #909399;
+    color: #fff;
+}
+
+.btn-info.pure.disabled {
+    background: #c8c9cc;
+    border-color: #c8c9cc;
+}
+
+.btn-warning {
+    border-color: #e6a23c;
+    color: #e6a23c;
+}
+
+.btn-warning.disabled {
+    border-color: #faecd8;
+    color: #faecd8;
+}
+
+.btn-warning.pure {
+    background: #e6a23c;
+    border-color: #e6a23c;
+    color: #fff;
+}
+
+.btn-warning.pure.disabled {
+    background: #faecd8;
+    border-color: #faecd8;
+}
+
+.btn-danger {
+    background: #fff;
+    border-color: #d80e0d;
+    color: #d80e0d;
+}
+
+.btn-danger.disabled {
+    border-color: #fab6b6;
+    color: #fab6b6;
+}
+
+.btn-danger.pure {
+    background: #d80e0d;
+    border-color: #d80e0d;
+    color: #fff;
+}
+
+.btn-danger.pure.disabled {
+    background: #fab6b6;
+    border-color: #fab6b6;
+    color: #fff;
+}

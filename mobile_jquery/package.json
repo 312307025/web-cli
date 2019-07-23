@@ -1,0 +1,14 @@
+{
+  "name": "pc",
+  "version": "1.0.0",
+  "description": "pc通用项目模版",
+  "main": "index.js",
+  "author": "小斌 <312307025@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0"
+  },
+  "dependencies": {}
+}

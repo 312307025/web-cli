@@ -1,0 +1,92 @@
+/* 无数据 */
+.no-data {
+    display: flex;
+    height: 70px;
+    font-size: 13px;
+    color: #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 锁定页面 放body上面使其不可以滚动 */
+.bodyLock {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 0;
+}
+
+/* 全屏的遮罩 */
+.mask {
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.mask-body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+}
+
+/* 公共状态 */
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.disabled.off {
+    pointer-events: auto;
+    cursor: not-allowed;
+}
+
+.old-price {
+    color: #717372;
+}
+
+.price {
+    color: #fd0000;
+}
+
+.primary {
+    color: #fd0000;
+}
+
+.success {
+    color: #67C23A;
+}
+
+.info {
+    color: #717171;
+}
+
+.warning {
+    color: #E6A23C;
+}
+
+.danger {
+    color: red;
+}
+
+/* 公共边框 */
+.border-primary {
+    border-style: solid;
+    border-color: #f0f0f0;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
