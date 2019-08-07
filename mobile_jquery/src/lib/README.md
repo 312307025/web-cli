@@ -13,3 +13,5 @@
 #可能会使用的库或插件
 1.axios -> 基于Promise的一个ajax请求库，不使用jq的时候推荐使用
 2.Gitment -> 基于GitHub Issues的评论库，快捷登录github帐号进行评论，适合不自己做评论的。https://github.com/imsun/gitment
+3.Lodash -> 是一个一致性、模块化、高性能的 JavaScript 实用工具库。没怎么用到，不过里面集成了很多基础类型的各种方法吧。
+4.echars -> 是一个图表库，挺好用的。
