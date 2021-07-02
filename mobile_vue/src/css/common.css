@@ -1,0 +1,96 @@
+/* 覆盖全局样式 */
+p {
+  margin: 0;
+}
+/* body {
+  background-color: #f8f8f9;
+} */
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/* 全局容器 */
+.container {
+  padding: 32px;
+}
+/* inputnumber默认不是100%宽度，带上这个就是了 */
+body .max-width {
+  width: 100%;
+}
+/* 公共样式 */
+.flex-warp {
+  display: flex;
+}
+.flex-warp .flex-side {
+  flex: 0 0 auto;
+}
+.flex-warp .flex-main {
+  flex: 1 1 auto;
+  width: 0;
+}
+.flex-center-v {
+  justify-content: center;
+}
+.flex-center-h {
+  align-items: center;
+}
+
+.no-data {
+  padding: 15px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #808695;
+  background-color: #f8f8f9;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 表单的公共样式 */
+.form-tip {
+  font-size: 12px;
+  color: #808695;
+}
+/* 表单的公共样式 */
+.form-label {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 5px;
+  /* color: #000; */
+}
+.form-title {
+  padding: 64px 32px 32px;
+  color: rgba(69, 90, 100, 0.6);
+  font-size: 28px;
+  line-height: 32px;
+}
+
+/* 公共的颜色库 */
+.blue {
+  color: #2d8cf0;
+}
+.green {
+  color: #19be6b;
+}
+.yellow {
+  color: #ff9900;
+}
+.red {
+  color: #ed4014;
+}
+.black {
+  color: #17233d;
+}
+.gray {
+  color: #c5c8ce;
+}
+/* 边框等颜色 */
+.border-color {
+  background-color: #dcdee2;
+}
+/* 背景颜色 */
+.background-color {
+  background-color: #f8f8f9;
+}
