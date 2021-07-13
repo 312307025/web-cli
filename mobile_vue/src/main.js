@@ -30,6 +30,7 @@ import 'vant/lib/index.css'
 import '@vant/touch-emulator' // 适配PC端
 Vue.use(Vant)
 
+// 关闭打包生成生产环境日志
 Vue.config.productionTip = false
 
 new Vue({
