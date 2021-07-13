@@ -2,11 +2,10 @@
   <div class="layout">
     <van-nav-bar v-if="nav.title || nav.show" :title="nav.title" :left-text="nav.left.text" :right-text="nav.right.text" :left-arrow="nav.left.arrow" @click-left="nav.left.click" @click-right="nav.right.click" fixed placeholder />
     <div class="inner" :class="minHeight">
-      <!-- <keep-alive>
+      <keep-alive>
         <router-view v-if="$route.meta.isKeep"></router-view>
       </keep-alive>
-      <router-view v-if="!$route.meta.isKeep"></router-view> -->
-      <router-view></router-view>
+      <router-view v-if="!$route.meta.isKeep"></router-view>
     </div>
   </div>
 </template>

@@ -25,14 +25,8 @@ const tablePagesMixin = {
     }
   },
   mounted() {
-    let { pageParam } = this.$store.state.globel || {}
-    this.pageParam = pageParam
-    let param = pageParam[this.routerName] || {}
-    if (this.isTabPage) {
-      param = param[this.tabPageKey] || {}
-    }
-    this.page = (param && param['page']) || 1
-    this.size = (param && param['size']) || 10
+    this.page = 1
+    this.size = 10
     setTimeout(() => {
       if (this.firstAuto) this.getTableDataListHandle()
     }, 10)
@@ -50,30 +44,11 @@ const tablePagesMixin = {
      */
     pageCur(page) {
       this.page = page
-      if (this.isTabPage) {
-        let temp = this.pageParam[this.routerName] || {}
-        temp[this.tabPageKey] = {
-          page: this.page,
-          size: this.size
-        }
-        this.pageParam[this.routerName] = temp
-      } else {
-        this.pageParam[this.routerName] = {
-          page: this.page,
-          size: this.size
-        }
-      }
-      // this.$store.dispatch('savePageParam', this.pageParam)
       this.getTableDataListHandle()
     },
     // 切换每页条数
     sizeCount(size) {
       this.size = size
-      this.pageParam[this.routerName] = {
-        page: this.page,
-        size: this.size
-      }
-      this.$store.dispatch('savePageParam', this.pageParam)
       if (this.page === 1) {
         this.getTableDataList()
       }
