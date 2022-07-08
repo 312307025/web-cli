@@ -14,7 +14,7 @@
     "core-js": "^3.6.5",
     "js-cookie": "^2.2.1",
     "lib-flexible": "^0.3.2",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "vant": "^2.12.19",
     "vue": "^2.6.11",
